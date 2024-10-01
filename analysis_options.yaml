@@ -1,0 +1,257 @@
+# These are our main anlyzer options that every project should comply with
+# Specific rules for specific code (i.e. plugins) or projects can be added at
+# the respective directory
+
+analyzer:
+  language:
+    strict-raw-types: false
+  errors:
+    flutter_style_todos: error
+    missing_required_param: error
+    missing_return: error
+    # todo: info // this is a yaml line
+    unused_local_variable: warning
+    deprecated_member_use: warning
+    unused_element: warning
+    unused_field: warning
+    dead_code: error
+    must_call_super: error
+    missing_enum_constant_in_switch: error
+    invalid_use_of_protected_member: error
+
+    unnecessary_statements: error
+    unnecessary_getters_setters: error
+    use_function_type_syntax_for_parameters: error
+    no_duplicate_case_values: error
+    no_adjacent_strings_in_list: error
+    non_constant_identifier_names: error
+    constant_identifier_names: error
+    avoid_returning_this: error
+    recursive_getters: error
+    unnecessary_new: error
+    prefer_const_constructors_in_immutables: error
+    prefer_const_literals_to_create_immutables: error
+    avoid_equals_and_hash_code_on_mutable_classes: error
+    camel_case_types: error
+    camel_case_extensions: error
+    library_names: error
+    file_names: error
+    library_prefixes: error
+
+    # linter warnings
+    avoid_print: warning
+    unnecessary_lambdas: warning
+    use_key_in_widget_constructors: warning
+    prefer_final_fields: warning
+    prefer_final_locals: warning
+    prefer_final_in_for_each: warning
+    prefer_const_constructors: warning
+    unnecessary_const: warning
+    unnecessary_brace_in_string_interps: warning
+  exclude:
+    - "bin/cache/**"
+    - "**.mocks.dart"
+    - "**/*.chopper.dart"
+    - "**/generated/**"
+    - "**/*.g.dart"
+    - "**/*.mocks.dart"
+    - "**/*_mock.dart"
+    - "**/*_mock_gen.dart"
+
+linter:
+  rules:
+    - always_declare_return_types
+    - always_put_control_body_on_new_line
+    - always_put_required_named_parameters_first
+    # - always_specify_types # No reason specified
+    # - always_use_package_imports # No reason specified
+    - avoid_dynamic_calls
+    - annotate_overrides
+    # - avoid_annotating_with_dynamic # No reason specified
+    - avoid_print
+    - avoid_returning_this
+    - avoid_bool_literals_in_conditional_expressions
+    # - avoid_catches_without_on_clauses # No reason specified
+    - avoid_catching_errors
+    # - avoid_classes_with_only_static_members # No reason specified
+    # - avoid_double_and_int_checks # No reason specified
+    # - avoid_dynamic_calls (experimental) # No reason specified
+    - avoid_empty_else
+    # - avoid_equals_and_hash_code_on_mutable_classes # No reason specified
+    # - avoid_escaping_inner_quotes # No reason specified
+    - avoid_field_initializers_in_const_classes # No reason specified
+    # - avoid_function_literals_in_foreach_calls # No reason specified
+    # - avoid_implementing_value_types # No reason specified
+    - avoid_init_to_null
+    # - avoid_js_rounded_ints # No reason specified
+    # - avoid_multiple_declarations_per_line # No reason specified
+    - avoid_null_checks_in_equality_operators
+    # - avoid_positional_boolean_parameters # No reason specified
+    # - avoid_print # No reason specified
+    # - avoid_private_typedef_functions # No reason specified
+    - avoid_redundant_argument_values
+    - avoid_relative_lib_imports
+    - avoid_renaming_method_parameters
+    - avoid_return_types_on_setters
+    # - avoid_returning_null # No reason specified
+    # - avoid_returning_null_for_future # No reason specified
+    - avoid_returning_null_for_void # No reason specified
+    # - avoid_returning_this # No reason specified
+    # - avoid_setters_without_getters # No reason specified
+    - avoid_shadowing_type_parameters
+    - avoid_single_cascade_in_expression_statements
+    - avoid_slow_async_io # No reason specified
+    # - avoid_type_to_string # No reason specified
+    - avoid_types_as_parameter_names
+    # - avoid_types_on_closure_parameters # No reason specified
+    - avoid_unnecessary_containers
+    - avoid_unused_constructor_parameters
+    - avoid_void_async
+    # - avoid_web_libraries_in_flutter # No reason specified
+    - await_only_futures
+    - camel_case_extensions
+    - camel_case_types # No reason specified
+    - cancel_subscriptions
+    # - cascade_invocations # No reason specified
+    # - cast_nullable_to_non_nullable (experimental) # No reason specified
+    - close_sinks
+    # - comment_references # No reason specified
+    - constant_identifier_names
+    # - control_flow_in_finally # No reason specified
+    - curly_braces_in_flow_control_structures
+    # - depend_on_referenced_packages
+    # - deprecated_consistency # No reason specified
+    # - diagnostic_describe_all_properties # No reason specified
+    - directives_ordering # No reason specified
+    # - do_not_use_environment # No reason specified
+    - empty_catches
+    - empty_constructor_bodies
+    - empty_statements
+    # - eol_at_end_of_file # No reason specified
+    # - exhaustive_cases # No reason specified
+    # - file_names # No reason specified
+    - flutter_style_todos
+    # - hash_and_equals # No reason specified
+    # - implementation_imports # No reason specified
+    # - invariant_booleans (experimental) # No reason specified
+    # - iterable_contains_unrelated_type # No reason specified
+    # - join_return_with_assignment # No reason specified
+    # - leading_newlines_in_multiline_strings # No reason specified
+    - library_names
+    - library_prefixes
+    # - library_private_types_in_public_api # No reason specified
+    # - lines_longer_than_80_chars # No reason specified
+    - collection_methods_unrelated_type # No reason specified
+    # - literal_only_boolean_expressions # No reason specified
+    # - missing_whitespace_between_adjacent_strings # No reason specified
+    - no_adjacent_strings_in_list
+    # - no_default_cases (experimental) # No reason specified
+    - no_duplicate_case_values
+    # - no_logic_in_create_state # No reason specified
+    # - no_runtimeType_toString # No reason specified
+    - non_constant_identifier_names
+    # - noop_primitive_operations # No reason specified
+    - null_check_on_nullable_type_parameter
+    - null_closures
+    - omit_local_variable_types
+    # - one_member_abstracts # No reason specified
+    # - only_throw_errors # No reason specified
+    # - overridden_fields # No reason specified
+    # - package_api_docs # No reason specified
+    # - package_names # No reason specified
+    # - package_prefixed_library_names # No reason specified
+    # - parameter_assignments # No reason specified
+    - prefer_adjacent_string_concatenation
+    # - prefer_asserts_in_initializer_lists # No reason specified
+    # - prefer_asserts_with_message # No reason specified
+    # - prefer_bool_in_asserts (deprecated) # No reason specified
+    - prefer_collection_literals
+    - prefer_conditional_assignment
+    - prefer_const_constructors
+    - prefer_const_constructors_in_immutables
+    - prefer_const_declarations
+    - prefer_const_literals_to_create_immutables
+    - prefer_constructors_over_static_methods
+    - prefer_contains
+    # - prefer_double_quotes # we prefer_single_quotes
+    - prefer_equal_for_default_values
+    # - prefer_expression_function_bodies # No reason specified
+    - prefer_final_fields
+    # - prefer_final_in_for_each # No reason specified
+    - prefer_final_locals
+    # - prefer_final_parameters # No reason specified
+    - prefer_for_elements_to_map_fromIterable
+    # - prefer_foreach # No reason specified
+    # - prefer_function_declarations_over_variables # No reason specified
+    - prefer_generic_function_type_aliases
+    # - prefer_if_elements_to_conditional_expressions # No reason specified
+    - prefer_if_null_operators
+    # - prefer_initializing_formals # No reason specified
+    - prefer_inlined_adds
+    # - prefer_int_literals # No reason specified
+    - prefer_interpolation_to_compose_strings
+    - prefer_is_empty
+    - prefer_is_not_empty
+    # - prefer_is_not_operator # No reason specified
+    - prefer_iterable_whereType
+    # - prefer_mixin # No reason specified
+    # - prefer_null_aware_method_calls # No reason specified
+    # - prefer_null_aware_operators # No reason specified
+    # - prefer_relative_imports # No reason specified
+    - prefer_single_quotes
+    - prefer_spread_collections
+    # - prefer_typing_uninitialized_variables # No reason specified
+    - prefer_void_to_null # No reason specified
+    # - provide_deprecation_message # No reason specified
+    # - public_member_api_docs # No reason specified
+    - recursive_getters
+    # - require_trailing_commas (experimental) # No reason specified
+    # - sized_box_for_whitespace # No reason specified
+    - slash_for_doc_comments
+    - sort_child_properties_last
+    # - sort_constructors_first # No reason specified
+    # - sort_pub_dependencies # No reason specified
+    - sort_unnamed_constructors_first # No reason specified
+    # - super_goes_last (deprecated) # No reason specified
+    # - test_types_in_equals # No reason specified
+    # - throw_in_finally # No reason specified
+    # - tighten_type_of_initializing_formals # No reason specified
+    # - type_annotate_public_apis # No reason specified
+    - type_init_formals
+    - unawaited_futures
+    # - unnecessary_await_in_return # No reason specified
+    - unnecessary_brace_in_string_interps
+    - unnecessary_const
+    # - unnecessary_final # No reason specified
+    - unnecessary_getters_setters
+    - unnecessary_lambdas
+    - unnecessary_new
+    - unnecessary_null_aware_assignments
+    # - unnecessary_null_checks (experimental) # No reason specified
+    - unnecessary_null_in_if_null_operators
+    # - unnecessary_nullable_for_final_variable_declarations (experimental) # No reason specified
+    - unnecessary_overrides
+    - unnecessary_parenthesis
+    # - unnecessary_raw_strings # No reason specified
+    - unnecessary_statements
+    # - unnecessary_string_escapes # No reason specified
+    # - unnecessary_string_interpolations # No reason specified
+    - unnecessary_this
+    - unrelated_type_equality_checks
+    - unsafe_html
+    # - use_build_context_synchronously (experimental) # No reason specified
+    - use_full_hex_values_for_flutter_colors
+    - use_function_type_syntax_for_parameters
+    - use_if_null_to_convert_nulls_to_bools
+    # - use_is_even_rather_than_modulo # No reason specified
+    # - use_key_in_widget_constructors # No reason specified
+    # - use_late_for_private_fields_and_variables (experimental) # No reason specified
+    # - use_named_constants # No reason specified
+    # - use_raw_strings # No reason specified
+    - use_rethrow_when_possible
+    # - use_setters_to_change_properties # No reason specified
+    # - use_string_buffers # No reason specified
+    # - use_test_throws_matchers # No reason specified
+    # - use_to_and_as_if_applicable # No reason specified
+    - valid_regexps
+    # - void_checks # No reason specified

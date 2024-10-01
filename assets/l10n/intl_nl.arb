@@ -1,0 +1,9 @@
+{
+    "@@locale": "nl",
+    "lotFetchingData": "Kavel wordt geladen...",
+    "lotDescriptionTitle": "Omschrijving",
+    "lotFeaturesTitle": "Kenmerken",
+    "lotFeatureAskingPricePerSquareMeter": "Vraagprijs per m2",
+    "lotFeatureStatus": "Status",
+    "lotFeatureAcceptance": "Aanvaarding"
+}

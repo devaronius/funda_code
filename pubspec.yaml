@@ -1,0 +1,51 @@
+name: funda
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  flutter: ^3.19.0
+  sdk: ">=3.3.4 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  bloc: 8.1.4
+  chopper: 6.1.4
+  flutter_bloc: 8.1.6
+  json_annotation: 4.9.0
+  dartz: 0.10.1
+  http: 1.2.2
+  logging: 1.2.0
+  get_it: 8.0.0
+  sliver_tools: ^0.2.12
+  flutter_svg: 2.0.10+1
+  carousel_slider: 5.0.0
+  cached_network_image: 3.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  chopper_generator: 6.0.1
+  mockito: 5.4.4
+  json_serializable: 6.8.0
+  test_coverage_badge: 0.2.0
+  build_runner: 2.4.9
+  intl: 0.18.1
+  intl_utils: 2.8.5
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/svgs/
+    - assets/json/funda_lot_detail.json
+
+flutter_intl:
+  enabled: true
+  class_name: Strings
+  main_locale: "nl"
+  arb_dir: assets/l10n # Optional. Sets the directory of your ARB resource files. Provided value should be a valid path on your system. Default: lib/l10n
+  output_dir: lib/gen
